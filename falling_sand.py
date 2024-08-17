@@ -25,8 +25,6 @@ class Grid:
 
     def add_sand(self, x, y):
         if 0 <= x < SCREEN_WIDTH and 0 <= y < SCREEN_HEIGHT:
-            t = x // GRID_SIZE
-            q = y // GRID_SIZE
             self.current_grid[x // GRID_SIZE][y // GRID_SIZE] = 1
 
     def update_grid(self):
